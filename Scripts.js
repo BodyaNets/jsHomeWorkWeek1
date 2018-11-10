@@ -75,6 +75,9 @@ const users = {
   5: {
     name: 'Kurz',
     lastName: 'Smith',
+    otherData: {
+      role: 'student'
+    }
   },
 };
   Object.keys(users).map(function(keys){
@@ -82,7 +85,7 @@ const users = {
   if(user) {
      console.log('name: ', user.name);
      console.log('last name: ', user.lastName);
-     console.log('role: ', user.otherData)
+     console.log('role: ', user.otherData.role)
   }
 })
 
